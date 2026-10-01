@@ -40,9 +40,18 @@ public class Automovil extends FabricaAutomovil {
     }
 
     public void accelerate() {
+        boolean encendido = true;
+        if (encendido) {
+            System.out.println("El auto esta encendido");
+        }
     }
 
     public void incrementoVelocidad() {
+        float velocidadInicial = 0;
+        while (velocidadInicial < 120) {
+            velocidadInicial += 20;
+            System.out.println("la velocidad actual es: " + velocidad_Inicial);
+        }
     }
 
     public void disminuirVelocidad() {
